@@ -57,7 +57,7 @@ import {
   View
 } from 'react-native';
 const { width, height } = Dimensions.get('window');
-// import HorizontalAdvancedFlatList from './Pages/HorizontalAdvancedFlatList';
+import HorizontalAdvancedFlatList from './Pages/HorizontalAdvancedFlatList';
 import HorizontalPagedFlatListExample from './Pages/HorizontalPagedFlatListExample';
 /*
  * Import HorizontalBasicListView from './Pages/HorizontalBasicListView';
@@ -182,11 +182,11 @@ export default class App extends Component {
   render() {
     return this.renderExamples([
       // [<component>, <component title>,<color>]
-      // [
-      //   HorizontalAdvancedFlatList,
-      //   'Horizontal Advanced FlatList Example',
-      //   'rgba(0,166,155,.8)'
-      // ],
+      [
+        HorizontalAdvancedFlatList,
+        'Horizontal Advanced FlatList Example',
+        'rgba(0,166,155,.8)'
+      ],
       [
         HorizontalPagedFlatListExample,
         'Horizontal Paged Example',
